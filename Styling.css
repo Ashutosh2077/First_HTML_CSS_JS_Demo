@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "monospace", "Patrick Hand", cursive;
+  outline: none;
+  text-decoration: none;
+}
+body {
+  height: 30vh;
+
+  /* display: flex;  */
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(46, 46, 46);
+}
+.intro {
+  color: darkorange;
+  width: 0ch;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: textanim 6s infinite alternate;
+  border-right: 3px solid black;
+}
+@keyframes textanim {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 22ch;
+  }
+}
+.image1 {
+}
+.image2 {
+}
+.image3 {
+}
