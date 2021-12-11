@@ -1,26 +1,118 @@
+/* CSS Reset */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "monospace", "Patrick Hand", cursive;
-  outline: none;
+}
+
+body {
+  background-color: rgba(39, 39, 39);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+#navbar::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+#logo {
+  margin: 10px 34px;
+}
+
+#logo img {
+  height: 59px;
+  margin: 3px 6px;
+}
+
+#navbar ul {
+  display: flex;
+  font-family: "Patrick Hand", cursive;
+}
+
+#navbar ul li {
+  list-style: none;
+  /* font-size: 1.3rem; */
+}
+
+#navbar ul li a {
+  font-size: 2rem;
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
   text-decoration: none;
 }
-body {
-  height: 30vh;
 
-  /* display: flex;  */
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(46, 46, 46);
+#navbar ul li a:hover {
+  color: black;
+  background-color: rgb(0, 250, 208);
 }
-.intro {
-  color: darkorange;
+
+/*Home Ka samn*/
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 550px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  background: url("https://img.itch.zone/aW1hZ2UvMTAzMzUzNy81ODk4NDUwLnBuZw==/original/kI%2FeFS.png")
+    no-repeat center center/cover;
+  height: 642px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+
+#home h1 {
+  animation: welcome 3s infinite alternate;
+  font-size: 4rem;
+  color: rgb(50, 219, 240);
+  background-color: rgba(0, 0, 0, 0.281);
+  border: 3px solid black;
+  border-radius: 30px;
+  text-align: center;
+  font-family: "Patrick Hand", cursive;
+}
+
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Patrick Hand", cursive;
+}
+#home p {
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  text-shadow: -1.5px 1.5px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255),
+    1px -1px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255);
   width: 0ch;
   overflow: hidden;
   white-space: nowrap;
-  animation: textanim 6s infinite alternate;
-  border-right: 3px solid black;
+  animation: textanim 4s infinite alternate;
+  border-right: 3px solid rgb(0, 0, 0);
 }
 @keyframes textanim {
   0% {
@@ -30,9 +122,111 @@ body {
     width: 22ch;
   }
 }
-.image1 {
+@keyframes welcome {
+  0% {
+    border-color: aqua;
+  }
+  10% {
+    border-color: chartreuse;
+  }
+  20% {
+    border-color: crimson;
+  }
+  30% {
+    border-color: darkorange;
+  }
+  40% {
+    border-color: greenyellow;
+  }
+  50% {
+    border-color: gold;
+  }
+  60% {
+    border-color: magenta;
+  }
+  70% {
+    border-color: springgreen;
+  }
+  80% {
+    border-color: whitesmoke;
+  }
+  90% {
+    border-color: tomato;
+  }
+  100% {
+    border-color: steelblue;
+  }
 }
-.image2 {
+
+/* projects Section */
+#projects {
+  margin: 34px;
+  display: flex;
 }
-.image3 {
+#projects .box {
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 2px 55px;
+  border-radius: 28px;
+  background: #424242;
+  margin-bottom: 20px;
+}
+
+#projects .box img {
+  height: 160px;
+  margin: auto;
+  display: block;
+}
+
+#projects .box p {
+  font-size: 1.5rem;
+  font-family: "Patric Hand", cursive;
+  align-content: center;
+}
+.h-primary {
+  font-family: "patric Hand", cursive;
+
+  font-size: 3.8rem;
+  padding: 12px;
+}
+
+.h-secondary {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2.3rem;
+  padding: 12px;
+}
+.center {
+  text-align: center;
+}
+
+#whoiam{
+    font-size: 2.5rem;
+    color: rgb(3, 3, 3);
+}
+#whoiam p{
+    font-size: 2.5rem;
+    color: rgb(206, 206, 206);
+    font-family: "patric Hand", cursive;
+}
+
+
+
+
+#contact-section{ 
+    position: relative;
+}
+
+
+#contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-item{
+    padding: 34px;
+}
+#contacts img{
+    height: 124px;
 }

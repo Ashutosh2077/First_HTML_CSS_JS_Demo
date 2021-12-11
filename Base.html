@@ -6,47 +6,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashutosh Singh</title>
-    <link rel="stylesheet" href="Styling.css">
+    <link rel="stylesheet" href="Ashu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="intro">
-        <!-- .is for  class and # is for id -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Resources/Logo.png" alt="Ashutosh">
+        </div>
+        <ul>
+            <li class="items"><a href="#">Home</a></li>
+            <li class="items"><a href="#whoiam">Who I am</a></li>
+            <li class="items"><a href="#project-container">My Projects</a></li>
+            <li class="items"><a href="#contact-section">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary"> &nbsp &nbsp Welcome to My Website &nbsp &nbsp</h1><br>
         <p>Hello, I am Ashutosh Singh</p>
-    </div>
+    </section>
 
 
-    <div>
-        <div class="image1">
-            <img src="Resources/Circle_Eater.png" alt="The Circle Eater">
-            <a href="https://cubethrone.itch.io/the-circle-eater" target="_blank">The Circle Eater </a><br>
 
+    <section id="whoiam">
+        <h1 class="h-primary center">Who Am I</h1>
+        <p class="center">Hello, I am Ashutosh Singh a 20 year old engineering student persuing B.tech from from
+            Noida Insitute Of Engineering And Technology.
+            And currently I am with The Hustler Team As an Intern.
+        </p>
+    </section>
+
+    <section id="project-container">
+        <h1 class="h-primary center">My Projects</h1>
+        <div id="projects">
+            <div class="box">
+                <a href="https://cubethrone.itch.io/the-circle-eater" target="_blank">
+                    <img src="Resources/Circle Eater.png" alt=""></a>
+                <h2 class="h-secondary center">The Circle Eater</h2>
+                <p class="center">Its my first game project which i made for a 24 hrs Game Jam competetion</p>
+            </div>
+            <div class="box">
+                <a href="https://cubethrone.itch.io/highway-racer" target="_blank">
+                    <img src="Resources/Highway Racer.png" alt=""></a>
+                <h2 class="h-secondary center">Highway Racer</h2>
+                <p class="center">Its an Under Development project so don't judge it now.</p>
+            </div>
+            <div class="box">
+                <a href="https://cubethrone.itch.io/desi-fifa-21" target="_blank">
+                    <img src="Resources/Desi Fifa 21.png" alt=""></a>
+                <h2 class="h-secondary center">Desi Fifa 21</h2>
+                <p class="center">This game is a complete project which you can play on Your pc or on any android
+                    device.</p>
+            </div>
         </div>
-        <div class="image2">
-            <img src="Resources/Highway_racer.png" alt="Italian Trulli">
-            <a href="https://cubethrone.itch.io/highway-racer" target="_blank">highway-racer </a><br>
+    </section>
+
+
+
+    <section id="contact-section">
+        <h1 class="h-primary center">Contact Bellow</h1>
+        <div id="contacts">
+            <div class="contact-item">
+                <a href="https://www.linkedin.com/in/ashutosh-singh-6709ab20b/" target="_blank">
+                    <img src="Resources/Linkedin.png" alt="Linkdin"></a>
+            </div>
+          
+            <div class="contact-item">
+                <a href="https://github.com/Ashutosh2077" target="_blank">
+                    <img src="Resources/github.png" alt="Github"></a>
+            </div>
+            <div class="contact-item">
+                <a href="https://cubethrone.itch.io/" target="_blank">
+                    <img src="Resources/itch.png" alt="Itch"></a>
+            </div>
         </div>
-        <div class="image3">
-            <img src="Resources/Desi_Fifa_21.png" alt="Italian Trulli">
-            <a href="https://cubethrone.itch.io/desi-fifa-21" target="_blank"> Desi-fifa-21</a><br>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-    <!-- <div class="links">
-        <a href="https://cubethrone.itch.io/the-circle-eater" target="_blank">The Circle Eater </a><br>
-        <a href="https://cubethrone.itch.io/highway-racer" target="_blank">highway-racer </a><br>
-        <a href="https://cubethrone.itch.io/desi-fifa-21" target="_blank">Desi-fifa-21 </a><br>
-    </div> -->
+    </section>
 </body>
-
 </html>
